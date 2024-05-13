@@ -1,0 +1,16 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: frontend-ingress
+spec:
+  rules:
+  - host: frontend.yourdomain.com # Remplacez par votre domaine ou sous-domaine
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/"
+        backend:
+          service:
+            name: frontend-service # Remplacez par le nom de votre service frontend
+            port:
+              number: 80 # Remplacez par le port de votre service frontend
