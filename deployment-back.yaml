@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: pdss-back-deployment
-  namespace: pdss-namespace-back
+  namespace: app
 spec:
   selector:
     matchLabels:
