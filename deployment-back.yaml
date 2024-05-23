@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: pdss-back
-        image: rochdi.azurecr.io/pdss-back:latest
+        image: rochdi.azurecr.io/pdss-back:v2
         ports:
         - containerPort: 5000
         resources:
