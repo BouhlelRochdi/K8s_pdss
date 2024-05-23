@@ -2,7 +2,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: mysql-connection-configmap
-  namespace: pdss-namespace-back
+  namespace: app
   labels:
     app: pdss-back
 data:
