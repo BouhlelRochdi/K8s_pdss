@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: pdss-front-service
-  namespace: pdss-namespace-front
+  namespace: app
 spec:
   ports:
   - port: 80
