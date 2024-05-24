@@ -1,7 +1,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: pdss-front-ingress
+  name: pdss-front
   namespace: app
   annotations:
     cert-manager.io/cluster-issuer: letsencrypt
