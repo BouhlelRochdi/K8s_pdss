@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: pdss-front-deployment
+  name: pdss-front
   namespace: app
 spec:
   selector:
