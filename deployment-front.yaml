@@ -7,7 +7,7 @@ spec:
   selector:
     matchLabels:
       app: pdss-front
-  replicas: 3
+  replicas: 2
   template:
     metadata:
       labels:
