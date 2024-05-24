@@ -1,18 +1,26 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: frontend-ingress
-  namespace: app
-  
+  name: sparklink-front
+  namespace: dev
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt
+    acme.cert-manager.io/http01-edit-in-place: "true"
+    nginx.ingress.kubernetes.io/ssl-redirect: "true"
 spec:
+  ingressClassName: nginx
+  tls:
+    - hosts:
+        - sparklink.dev.mobeliteplus.com
+      secretName: sparklink-tls
   rules:
-  - host: test.mobelite.fr
-    http:
-      paths:
-      - pathType: Prefix
-        path: "/"
-        backend:
-          service:
-            name: pdss-front-service
-            port:
-              number: 80
+    - host: sparklink.dev.mobeliteplus.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: sparklink-front
+                port:
+                  number: 80
