@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: pdss-front
-        image: pdssacr.azurecr.io/pdss-front:35aa561
+        image: pdssacr.azurecr.io/pdss-front:82cc24c
         ports:
         - containerPort: 80
         resources:
