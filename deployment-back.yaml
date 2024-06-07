@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: pdss-back
-        image: acrpdssapp.azurecr.io/pdss-back:53c3744
+        image: acrpdssapp.azurecr.io/pdss-back:1e795ce
         ports:
         - containerPort: 5000
         resources:
