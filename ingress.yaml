@@ -12,7 +12,7 @@ spec:
   tls:
     - hosts:
         - test.mobelite.fr
-      secretName: test.mobelite.fr-tls
+      secretName: ${{ secrets.TLS_SECRET_NAME }}
   rules:
     - host: test.mobelite.fr
       http:
