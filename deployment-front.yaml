@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: pdss-front
-        image: acrpdssapp.azurecr.io/pdss-front:659a277
+        image: acrpdssapp.azurecr.io/pdss-front:8be77da
         ports:
         - containerPort: 80
         resources:
